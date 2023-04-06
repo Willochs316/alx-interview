@@ -1,16 +1,8 @@
 #!/usr/bin/python3
-'''
-The minimum operations coding challenge.
-'''
-
 
 def minOperations(n: int) -> int:
-    '''
-    Computes the fewest number of operations needed to result
-    in exactly n H characters.
-    '''
-    if not isinstance(n, int) or n < 1:
-        return -1  # Return an error code for invalid input
+    if n < 1:
+        return 0  # Return 0 if n is impossible to achieve
     ops_count = 0
     clipboard = 0
     done = 1
